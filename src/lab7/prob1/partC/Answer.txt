@@ -1,0 +1,1 @@
+1. public int hashCode() was not implemented, which is a prerequisite of equals().
