@@ -1,0 +1,2 @@
+ArrayList extends: 1) AbstractList
+ArrayList implements: 1) List, 2) RandomAccess, 3) Cloneable, 4) Serializable, 5) Collection, 6) Iterable

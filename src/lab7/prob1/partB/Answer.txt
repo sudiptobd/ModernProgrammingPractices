@@ -1,0 +1,2 @@
+1. public boolean equals(Object obj) was not implemented properly.
+2. public int hashCode() was not implemented, which is a prerequisite of equals().
