@@ -1,0 +1,3 @@
+Java 8 Rules for Interfaces:
+1. If B and C inherit the same default method m() from A and D does not override m(), there is no ambiguity because all paths lead back to the same A's m().
+2. If D wants to provide its own behavior, it can override m() explicitly.
