@@ -1,0 +1,2 @@
+The issue in the copyOf method arises because the wildcard type (?) does not allow for specific type information to be captured and reused.
+To fix this, we can use a helper method with a type parameter to capture the wildcard and preserve the type information.

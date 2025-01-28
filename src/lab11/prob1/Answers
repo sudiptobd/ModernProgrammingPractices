@@ -1,0 +1,7 @@
+a. Compile error occurs at the assignment of ints to nums: List<Number> nums = ints;
+The issue is with assigning List<Integer> to List<Number>. In Java, generics are invariant, meaning List<Integer> is not a subtype of List<Number>, even though Integer is a subtype of Number.
+
+b. Compile error occurs at the attempt to Add 3.14 to nums: nums.add(3.14);
+   With List<? extends Number>, the list can be read but not written to. This is because the compiler cannot guarantee the exact type of Number in the list.
+   For example, if nums refers to a List<Integer>, adding a Double (3.14) would violate type safety.
+

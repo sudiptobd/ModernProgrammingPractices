@@ -1,0 +1,6 @@
+a. Compiler Error: nums.add(3.14);
+The wildcard ? extends Number makes nums read-only for adding new elements because the compiler cannot guarantee the type safety of adding 3.14 (a Double) to a List<Integer>.
+
+b. Compiler Error: double dbl = sum(ints);
+The sum method expects a Collection<? extends Number>.
+ However, ints is declared as List<? super Integer>, and the wildcard ? super Integer is incompatible with ? extends Number because the latter allows only reading, while the former allows adding.
