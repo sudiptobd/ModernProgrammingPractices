@@ -8,7 +8,7 @@ public class Main {
     }
 
     public static void printSquares(int num) {
-        IntStream.iterate(1, Main::squareGenerator) // Generate squares
+        IntStream.iterate(1, Main::squareGenerator)
                 .limit(num)
                 .forEach(System.out::println);
     }
